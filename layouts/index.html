@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<section>
+    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+    <article>
+        {{ if .Title }}
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ end }}
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}'
+            itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ .Content }}
+        <hr>
+    </article>
+    {{ end }}
+</section>
+{{ partial "pagination.html" . }}
+{{ partial "footer.html" . }}
