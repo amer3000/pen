@@ -4,7 +4,7 @@
 name = "Pen"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Simple minimalist theme using Tuft CSS framework. Clean markup"
 homepage = "https://www.amerkhalid.com/"
 tags = []
 features = []
