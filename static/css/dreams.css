@@ -13,12 +13,25 @@ nav ul {
 
 nav ul li {
     float: left;
+    border-top: ridge;
+    border-bottom: ridge;
+    border-left: ridge;
+    border-right: ridge;
+    border-width: 1px;
+    text-align: center;
+    width: 6rem;
 }
 
 nav ul li a {
-    padding-right: 2rem;
     padding-top: 1rem;
     text-decoration: none;
+    height: 100%;
+    padding-bottom: 1rem;
+    background-repeat: no-repeat;
+}
+
+nav ul li a:link {
+    background-repeat: no-repeat;
 }
 
 nav ul li:not(:first-child) {
@@ -26,7 +39,7 @@ nav ul li:not(:first-child) {
 }
 
 nav ul li a:hover {
-    background-color: #eeeeec;
+    font-weight: bolder;
 }
 
 section > p, section > footer, section > table {
