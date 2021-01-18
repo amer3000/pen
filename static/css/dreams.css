@@ -29,17 +29,17 @@ nav ul li a:hover {
     background-color: #eeeeec;
 }
 
-section>p, section>footer, section>table {
+section > p, section > footer, section > table {
     width: 80%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
 
-section>ol, section>ul {
+section > ol, section > ul {
     width: 75%;
     -webkit-padding-start: 5%;
 }
 
-section>footer,section>p,section>table {
+section > footer, section > p, section > table {
     width: 100%
 }
