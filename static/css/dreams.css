@@ -4,6 +4,17 @@ body {
     width: 80%;
 }
 
+section>p, section>footer, section>table {
+    width: 80%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+
+section>ol, section>ul {
+    width: 75%;
+    -webkit-padding-start: 5%;
+}
+
 nav ul {
     list-style: none;
     font-size: 1rem;
@@ -24,7 +35,6 @@ nav ul li a {
 nav ul li:not(:first-child) {
     margin-top: 0;
 }
-
 
 nav ul li a:hover {
     background-color: #eeeeec;
