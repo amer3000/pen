@@ -56,3 +56,11 @@ section > ol, section > ul {
 section > footer, section > p, section > table {
     width: 100%
 }
+
+a {
+    color: #1240da;
+}
+
+a:visited {
+    color: #5f61b8;
+}
