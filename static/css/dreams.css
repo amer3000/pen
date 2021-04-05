@@ -42,6 +42,10 @@ nav ul li a:hover {
     font-weight: bolder;
 }
 
+section {
+    padding-top: 1rem;
+}
+
 section > p, section > footer, section > table {
     width: 80%;
 }
@@ -67,4 +71,9 @@ a:visited {
 
 pre {
     padding: 1rem;
+}
+
+footer {
+    padding-top: 2rem;
+    text-align: right;
 }
