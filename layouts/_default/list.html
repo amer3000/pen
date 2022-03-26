@@ -1,12 +1,12 @@
 {{ partial "header.html" . }}
-<section>
-  <ul>
+<main>
+  <section>
     {{ range .Data.Pages }}
-    <li>
+    <p>
       {{ .Date.Format "Jan 2, 2006" }} -
       <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
+    </p>
     {{ end }}
-  </ul>
-</section>
+  </section>
+</main>
 {{ partial "footer.html" . }}

@@ -1,8 +1,10 @@
 {{ partial "header.html" . }}
-<section>
-  <h1>{{ .Title }}</h1>
-</section>
-<section>
-  {{ .Content }}
-</section>
+<main>
+  <section>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <hr>
+    <small>Published on <time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+  </section>
+</main>
 {{ partial "footer.html" . }}
