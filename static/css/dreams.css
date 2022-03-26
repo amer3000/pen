@@ -1,64 +1,43 @@
 body {
-    padding-right: 10%;
-    padding-left: 10%;
-    width: 80%;
+    padding: 2% 10%;
+}
+
+aside {
+    width: 10rem;
+    float: left;
+}
+
+main {
+    margin-left: 10rem;
 }
 
 nav ul {
     list-style: none;
     font-size: 1rem;
-    padding-inline-start: 0;
     padding-bottom: 1rem;
 }
 
 nav ul li {
-    float: left;
-    border-top: ridge;
-    border-bottom: ridge;
-    border-left: ridge;
-    border-right: ridge;
-    border-width: 1px;
-    text-align: center;
     width: 6rem;
+    height: 3rem;
 }
 
 nav ul li a {
     padding-top: 1rem;
     text-decoration: none;
-    height: 100%;
     padding-bottom: 1rem;
     background-repeat: no-repeat;
-}
-
-nav ul li a:link {
-    background-repeat: no-repeat;
-}
-
-nav ul li:not(:first-child) {
-    margin-top: 0;
+    word-wrap: break-word;
 }
 
 nav ul li a:hover {
     font-weight: bolder;
 }
 
-section {
-    padding-top: 1rem;
-}
-
-section > p, section > footer, section > table {
-    width: 80%;
-}
-
-/* 50 + 5 == 55, to be the same width as paragraph */
 
 section > ol, section > ul {
     width: 75%;
     -webkit-padding-start: 5%;
-}
-
-section > footer, section > p, section > table {
-    width: 100%
 }
 
 a {
@@ -78,8 +57,5 @@ footer {
     text-align: right;
 }
 
-table {
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 

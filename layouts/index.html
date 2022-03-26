@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+<main>
 <section>
     {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
     <article>
@@ -12,5 +13,6 @@
     </article>
     {{ end }}
 </section>
+</main>
 {{ partial "pagination.html" . }}
 {{ partial "footer.html" . }}
