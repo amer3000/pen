@@ -11,6 +11,16 @@ main {
     margin-left: 10rem;
 }
 
+@media screen and (max-width: 678px) {
+    aside {
+      display: none;
+    }
+
+    main {
+        margin-left: 0.5rem;
+    }
+}
+
 nav ul {
     list-style: none;
     font-size: 1rem;
@@ -33,7 +43,6 @@ nav ul li a {
 nav ul li a:hover {
     font-weight: bolder;
 }
-
 
 section > ol, section > ul {
     width: 75%;
