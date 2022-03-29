@@ -66,5 +66,7 @@ footer {
     text-align: right;
 }
 
-
+p {
+    max-width: 712px;
+}
 
