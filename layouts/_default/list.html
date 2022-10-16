@@ -1,11 +1,15 @@
 {{ partial "header.html" . }}
 <main>
   <section>
-    {{ range .Data.Pages }}
-    <p>
-      {{ .Date.Format "Jan 2, 2006" }} -
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </p>
+    {{ range (.Data.Pages).GroupByDate "2006" -}}
+      <h2>{{ .Key }}</h2>
+      {{ range .Pages }}
+        <p>
+          {{ .Date.Format "Jan 2" }} -
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </p>
+      {{ end }}
+      <br>
     {{ end }}
   </section>
 </main>
