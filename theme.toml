@@ -4,9 +4,9 @@
 name = "Pen"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = "Simple minimalist theme using Tuft CSS framework. Clean markup"
+description = "Simple minimalist theme. Clean markup"
 homepage = "https://www.amerkhalid.com/"
-tags = []
+tags = [minimalist, simple, clean, responsive, blog]
 features = []
 min_version = "0.41.0"
 
