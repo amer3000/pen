@@ -1,17 +1,27 @@
 {{ partial "header.html" . }}
 <main>
     <section>
-        {{ range (where .Paginator.Pages "Params.hidden" "ne" "true").GroupByDate "2006" -}}
-        <h2>{{ .Key }}</h2>
-        {{ range .Pages }}
+        {{ $paginator := .Paginate (.Site.RegularPages.Reverse) 1 }}
+
+        {{ range $paginator.Pages }}
         <p>
-            {{ .Date.Format "Jan 2" }} -
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </p>
-        {{ end }}
         <br>
+        {{ .Content }}
+        <br>
+        <p>
+            <small>Published on <time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+        </p>
+        <hr>
         {{ end }}
     </section>
-    {{ partial "pagination.html" . }}
+    {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}">Prev</a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}">Next</a>
+    {{ end }}
+
 </main>
 {{ partial "footer.html" . }}
